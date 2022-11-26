@@ -1,0 +1,2 @@
+ALTER TABLE "User"
+RENAME TO "user";
