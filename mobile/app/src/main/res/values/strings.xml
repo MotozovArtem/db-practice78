@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">client</string>
+    <string name="id">ID:</string>
+    <string name="value">Value</string>
+    <string name="name">Name:</string>
+    <string name="length">Length:</string>
+    <string name="author">Author:</string>
+    <string name="request_failed">Request data failed. Check logs!</string>
+</resources>
