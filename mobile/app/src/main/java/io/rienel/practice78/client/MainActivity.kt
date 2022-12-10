@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 		val adapter: SongListAdapter = SongListAdapter(mutableListOf())
 		binding.songRecyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
 		binding.songRecyclerView.adapter = adapter
-		viewModel.getSongs().observe(this) { songs ->
+		viewModel.songs.observe(this) { songs ->
 			if (songs == null) {
 				Toast.makeText(this@MainActivity, R.string.request_failed, Toast.LENGTH_SHORT)
 					.show()
@@ -32,5 +32,9 @@ class MainActivity : AppCompatActivity() {
 			}
 			(binding.songRecyclerView.adapter as SongListAdapter).updateSongsList(songs)
 		}
+		binding.button.setOnClickListener {
+			viewModel.addNewSongs()
+		}
+		viewModel.getSongs()
 	}
 }

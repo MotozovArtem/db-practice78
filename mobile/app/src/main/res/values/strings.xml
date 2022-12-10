@@ -6,4 +6,5 @@
     <string name="length">Length:</string>
     <string name="author">Author:</string>
     <string name="request_failed">Request data failed. Check logs!</string>
+    <string name="new_song">New song</string>
 </resources>
