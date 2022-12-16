@@ -14,9 +14,9 @@ Two modules:
 * PostgreSQL
 * Docker
 
-## Mobila Application
-* Kotlin
+## Mobile Application
+* Kotlin 1.6.21
 * Android 11 (30 SDK)
 * Dagger
-* Retrofit
-* Jackson
+* Retrofit 2
+* Jackson - Converter
